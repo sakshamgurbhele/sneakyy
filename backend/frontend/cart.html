@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">SneakerHead</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            
+            
+            <li class="nav-item">
+              <a class="nav-link" href="cart.html" tabindex="-1">
+                Cart<i class="bi bi-cart-plus-fill"></i> 
+                <span class="cart-badge badge bg-success">3</span></a>
+            </li>
+          </ul>
+          <ul class="navbar-nav mb-2 mb-lg-0 mx-lg-2 order-sm-last">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="myaccount" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                My Account
+              </a>
+              <ul class="dropdown-menu bg-light text-light" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="/#" data-bs-toggle="modal" data-bs-target="#exampleModal">My Orders</a></li>
+                <li><a class="dropdown-item" href="/#" data-bs-toggle="modal" data-bs-target="#exampleModal">Profile</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="login.html">Logout</a></li>
+              </ul>
+            </li>
+          </ul>
+          <form class="d-flex search-form">
+            <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-success" type="submit" data-bs-toggle="tooltip" data-bs-placement="left" title="Search for all products">
+              <i class="bi bi-search"></i>
+            </button>
+          </form>
+         
+        </div>
+      </div>
+    </nav>
+    <!-- End of Navigation -->
+
+    <div class="container mb-5">
+      <div class="d-flex flex-row align-items-start">
+        <div class="col-8 d-flex flex-column m-2">
+          <div class="cart-item p-3">
+            <div class="d-flex flex-row">
+              <img
+                class="col-2 img-fluid"
+                src="images/product-1-square.jpg"
+                alt=""
+              />
+              <div class="col-6 p-2">
+                <h5>Air Jordan 7 Retro SE</h5>
+                <h6>Nike</h6>
+                <p>12,999</p>
+              </div>
+              <div class="col-2 p-2">
+                Quatity
+                <select name="" id="">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                </select>
+              </div>
+              <div class="col-2 p-2">
+                Shoe Size
+                <select name="" id="">
+                  <option value="1">6</option>
+                  <option value="2">7</option>
+                  <option value="3">8</option>
+                  <option value="1">9</option>
+                  <option value="2">10</option>
+                  <option value="3">11</option>
+                </select>
+              </div>
+              <!-- <div data-bs-toggle="modal" data-bs-target="#removeItemModal"
+                class="col-2 d-flex justify-content-end align-items-start close"
+              >
+                <i class="bi bi-x-circle"></i>
+              </div> -->
+            </div>
+          </div>
+          <div class="cart-item p-3">
+            <div class="d-flex flex-row">
+              <img
+                class="col-2 img-fluid"
+                src="images/product-1-square.jpg"
+                alt=""
+              />
+              <div class="col-6 p-2">
+                <h5>Air Jordan 11 Retro Low IE</h5>
+                <h6>Nike</h6>
+                <p>10,999</p>
+              </div>
+              <div class="col-2 p-2">
+                Quatity
+                <select name="" id="">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                </select>
+              </div>
+              <div class="col-2 p-2">
+                Shoe Size
+                <select name="" id="">
+                  <option value="1">6</option>
+                  <option value="2">7</option>
+                  <option value="3">8</option>
+                  <option value="1">9</option>
+                  <option value="2">10</option>
+                  <option value="3">11</option>
+                </select>
+              </div>
+              <!-- <div data-bs-toggle="modal" data-bs-target="#removeItemModal"
+                class="col-2 d-flex justify-content-end align-items-start close"
+              >
+                <i class="bi bi-x-circle"></i>
+              </div> -->
+            </div>
+          </div>
+          <div class="cart-item p-3">
+            <div class="d-flex flex-row">
+              <img
+                class="col-2 img-fluid"
+                src="images/product-1-square.jpg"
+                alt=""
+              />
+              <div class="col-6 p-2">
+                <h5>Air Jordan 1 Retro High OG</h5>
+                <h6>Nike</h6>
+                <p>11,999</p>
+              </div>
+              <div class="col-2 p-2">
+                Quatity
+                <select name="" id="">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                </select>
+              </div>
+              <div class="col-2 p-2">
+                Shoe Size
+                <select name="" id="">
+                  <option value="1">6</option>
+                  <option value="2">7</option>
+                  <option value="3">8</option>
+                  <option value="1">9</option>
+                  <option value="2">10</option>
+                  <option value="3">11</option>
+                </select>
+              </div>
+              <!-- <div data-bs-toggle="modal" data-bs-target="#removeItemModal"
+                class="col-2 d-flex justify-content-end align-items-start close"
+              >
+                <i class="bi bi-x-circle"></i>
+              </div> -->
+            </div>
+          </div>
+        </div>
+        <div class="col-4 order p-3 m-2">
+          <h4>Order Total</h4>
+          <div class="d-flex flex-row py-2">
+            <input type="text" class="form-control" placeholder="promo code" />
+            <button class="btn btn-primary">Apply</button>
+          </div>
+          <div class="d-flex flex-row justify-content-between p-2">
+            <span class="billing-item">items</span>
+            <span class="billing-cost">11999</span>
+          </div>
+          <div class="d-flex flex-row justify-content-between p-2">
+            <span class="billing-item">Shipping</span>
+            <span class="billing-cost">1000</span>
+          </div>
+          <div class="d-flex flex-row justify-content-between p-2">
+            <span class="billing-item">Discount</span>
+            <span class="billing-cost">1000</span>
+          </div>
+          <div class="d-flex flex-row justify-content-between p-2">
+            <span class="billing-item fs-5">Total</span>
+            <span class="billing-cost fs-5">12999</span>
+          </div>
+
+          <div class="d-flex mt-3">
+              <a href="https://pages.razorpay.com/pl_KPdpF3UUbQHy3I/view" class="btn btn-primary flex-grow-1">Pay Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+   
+  </div>
+  <!-- End of Footer -->
+  <footer class="footdes ">
+    <div class="container-fluid footer-1 ">
+        <div class="row">
+          <div class="col-sm-4 foocol bg-dark">
+            <h4 class="text-white fh4">About Us</h4>
+            <p class="text-white">The world's largest athletic apparel company, Nike is best known for its footwear, apparel, and equipment. Founded in 1964 as Blue Ribbon Sports, the company became SneakerHead in 1971 after the Greek goddess of victory. One of the most valuable brands among sport businesses, SneakerHead employs over 76 people worldwide. </p>
+           </div>
+          <div class="col-sm-4 foocol bg-dark">
+            <h4 class="text-white fh4 ">Categories</h4>
+            <i class="fa fa-window-minimize" > <a href="electronics.html" style="text-decoration: none; list-style:none; display:inline-block;color: #F0FFFF;">Lifestyle</a></i> <br />
+            <i class="fa fa-window-minimize" > <a href="mobiles.html" style="text-decoration: none; list-style:none; display:inline-block; color: #F0FFFF;">Running</a></i> <br />
+            <i class="fa fa-window-minimize" > <a href="laptops.html" style="text-decoration: none; list-style:none; display:inline-block; color: #F0FFFF;">Basketball</a></i> <br />
+            <i class="fa fa-window-minimize" > <a href="#" style="text-decoration: none; list-style:none; display:inline-block; color: #F0FFFF;">Football</a></i> <br />
+            <i class="fa fa-window-minimize" > <a href="#" style="text-decoration: none; list-style:none; display:inline-block; color: #F0FFFF;">Training & Gym</a></i> <br />
+            <i class="fa fa-window-minimize" > <a href="#" style="text-decoration: none; list-style:none; display:inline-block; color: #F0FFFF;">Jordan</a></i> <br />
+            <i class="fa fa-window-minimize" > <a href="#" style="text-decoration: none; list-style:none; display:inline-block; color: #F0FFFF;">Skateboarding</a></i> <br />
+            <i class="fa fa-window-minimize" > <a href="#" style="text-decoration: none; list-style:none; display:inline-block; color: #F0FFFF;">Golf</a></i>  <br />
+            <i class="fa fa-window-minimize" > <a href="#" style="text-decoration: none; list-style:none; display:inline-block; color: #F0FFFF;">Athletics</a></i> <br />
+          </div>
+          <div class="col-sm-4 foocol bg-dark">
+            <h4 class="text-white fh4">Contact Us</h4>
+            <span style="color:antiquewhite; text-transform:capitalize;">Address:</span><span class="text-white"> SneakerHead, 787 Fort, Mumbai, Maharashtra</span><br />
+            <i class="fas fa-envelope text-white" ></i> <span style="color:antiquewhite; text-transform:capitalize;">Mail:</span><span class="text-white" style="overflow-wrap: break-word;"> sakshamm@duck.com</span><br />
+            <i class="fas fa-phone-alt text-white" ></i> <span style="color:antiquewhite; text-transform:capitalize;">Telephone:</span><span class="text-white"> (+91)8074786868</span> <br />
+            <br />
+            <br />
+            <pc class="text-white">For any quries please contact us via <a href="mailto:sakshamm@duck.com">mail</a> or phone.</p>
+          </div>
+        </div>
+        <div class="row">
+            <div class="footer-2 col-sm foocol-2 bg-dark">
+                <div class="footer-2-div">
+                <a href="https://www.facebook.com"><i class="fab fa-facebook text-white"></i></a>
+                <a href="https://www.twitter.com"><i class="fab fa-twitter text-white"></i></a>
+                <a href="https://www.linkedin.com"><i class="fab fa-linkedin-in text-white"></i></a>
+                <a href="https://www.instagram.com"><i class="fab fa-instagram text-white"></i></a>
+                <a class="text-white" style="float:right; margin-right:15px;">&copy;2022 SneakerHead <br> Developed by <b>Saksham Gurbhele</b></a>
+      
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+       <!-- End of Modal -->
+
+       <div class="modal fade" id="removeItemModal" tabindex="-1" aria-labelledby="removeItemModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="removeItemModalLabel">Removing Item</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              Are you sure you want to remove this item from your cart ?
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-bs-dismiss="modal">NO</button>
+              <button type="button" class="btn btn-success" data-bs-dismiss="modal">YES</a>
+            </div>
+          </div>
+        </div>
+      </div>
+         <!-- End of Modal -->
+     <script src="app.js"></script>
+  </body>
+</html>
